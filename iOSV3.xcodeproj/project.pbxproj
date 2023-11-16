@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F4CB85F2B02127B0074FB15 /* iOSV3MonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4CB85E2B02127B0074FB15 /* iOSV3MonApp.swift */; };
+		6F3B77E12B0607930013BD2E /* ChuckAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B77E02B0607930013BD2E /* ChuckAPI.swift */; };
+		6F3B77E32B0619F40013BD2E /* ChuckModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B77E22B0619F40013BD2E /* ChuckModels.swift */; };
+		6F3B77E52B061BC30013BD2E /* ShowJokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B77E42B061BC30013BD2E /* ShowJokeView.swift */; };
+		6F3B77E72B0639F90013BD2E /* ChuckHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B77E62B0639F90013BD2E /* ChuckHelper.swift */; };
+		6F4CB85F2B02127B0074FB15 /* iOSV3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4CB85E2B02127B0074FB15 /* iOSV3App.swift */; };
 		6F4CB8612B02127B0074FB15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4CB8602B02127B0074FB15 /* ContentView.swift */; };
 		6F4CB8632B02127C0074FB15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F4CB8622B02127C0074FB15 /* Assets.xcassets */; };
 		6F4CB8662B02127C0074FB15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F4CB8652B02127C0074FB15 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6F4CB85B2B02127B0074FB15 /* iOSV3Mon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSV3Mon.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F4CB85E2B02127B0074FB15 /* iOSV3MonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSV3MonApp.swift; sourceTree = "<group>"; };
+		6F3B77E02B0607930013BD2E /* ChuckAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckAPI.swift; sourceTree = "<group>"; };
+		6F3B77E22B0619F40013BD2E /* ChuckModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckModels.swift; sourceTree = "<group>"; };
+		6F3B77E42B061BC30013BD2E /* ShowJokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowJokeView.swift; sourceTree = "<group>"; };
+		6F3B77E62B0639F90013BD2E /* ChuckHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckHelper.swift; sourceTree = "<group>"; };
+		6F4CB85B2B02127B0074FB15 /* iOSV3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4CB85E2B02127B0074FB15 /* iOSV3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSV3App.swift; sourceTree = "<group>"; };
 		6F4CB8602B02127B0074FB15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6F4CB8622B02127C0074FB15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F4CB8652B02127C0074FB15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -43,7 +51,7 @@
 		6F4CB85C2B02127B0074FB15 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6F4CB85B2B02127B0074FB15 /* iOSV3Mon.app */,
+				6F4CB85B2B02127B0074FB15 /* iOSV3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +59,12 @@
 		6F4CB85D2B02127B0074FB15 /* iOSV3Mon */ = {
 			isa = PBXGroup;
 			children = (
-				6F4CB85E2B02127B0074FB15 /* iOSV3MonApp.swift */,
+				6F4CB85E2B02127B0074FB15 /* iOSV3App.swift */,
 				6F4CB8602B02127B0074FB15 /* ContentView.swift */,
+				6F3B77E02B0607930013BD2E /* ChuckAPI.swift */,
+				6F3B77E22B0619F40013BD2E /* ChuckModels.swift */,
+				6F3B77E42B061BC30013BD2E /* ShowJokeView.swift */,
+				6F3B77E62B0639F90013BD2E /* ChuckHelper.swift */,
 				6F4CB8622B02127C0074FB15 /* Assets.xcassets */,
 				6F4CB8642B02127C0074FB15 /* Preview Content */,
 			);
@@ -70,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6F4CB85A2B02127B0074FB15 /* iOSV3Mon */ = {
+		6F4CB85A2B02127B0074FB15 /* iOSV3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F4CB8692B02127C0074FB15 /* Build configuration list for PBXNativeTarget "iOSV3Mon" */;
+			buildConfigurationList = 6F4CB8692B02127C0074FB15 /* Build configuration list for PBXNativeTarget "iOSV3" */;
 			buildPhases = (
 				6F4CB8572B02127B0074FB15 /* Sources */,
 				6F4CB8582B02127B0074FB15 /* Frameworks */,
@@ -82,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = iOSV3Mon;
+			name = iOSV3;
 			productName = iOSV3Mon;
-			productReference = 6F4CB85B2B02127B0074FB15 /* iOSV3Mon.app */;
+			productReference = 6F4CB85B2B02127B0074FB15 /* iOSV3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6F4CB8562B02127B0074FB15 /* Build configuration list for PBXProject "iOSV3Mon" */;
+			buildConfigurationList = 6F4CB8562B02127B0074FB15 /* Build configuration list for PBXProject "iOSV3" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6F4CB85A2B02127B0074FB15 /* iOSV3Mon */,
+				6F4CB85A2B02127B0074FB15 /* iOSV3 */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F3B77E72B0639F90013BD2E /* ChuckHelper.swift in Sources */,
+				6F3B77E52B061BC30013BD2E /* ShowJokeView.swift in Sources */,
 				6F4CB8612B02127B0074FB15 /* ContentView.swift in Sources */,
-				6F4CB85F2B02127B0074FB15 /* iOSV3MonApp.swift in Sources */,
+				6F3B77E12B0607930013BD2E /* ChuckAPI.swift in Sources */,
+				6F3B77E32B0619F40013BD2E /* ChuckModels.swift in Sources */,
+				6F4CB85F2B02127B0074FB15 /* iOSV3App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6F4CB8562B02127B0074FB15 /* Build configuration list for PBXProject "iOSV3Mon" */ = {
+		6F4CB8562B02127B0074FB15 /* Build configuration list for PBXProject "iOSV3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F4CB8672B02127C0074FB15 /* Debug */,
@@ -334,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F4CB8692B02127C0074FB15 /* Build configuration list for PBXNativeTarget "iOSV3Mon" */ = {
+		6F4CB8692B02127C0074FB15 /* Build configuration list for PBXNativeTarget "iOSV3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F4CB86A2B02127C0074FB15 /* Debug */,
